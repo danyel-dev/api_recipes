@@ -3,6 +3,6 @@ from .views import RecipeApiList, RecipeApiDetail
 
 
 urlpatterns = [
-    path('', RecipeApiList, name='recipe_list'),
-    path('<int:pk>/', RecipeApiDetail, name='recipe_detail'),
+    path('recipes/', RecipeApiList, name='recipe_list'),
+    path('recipes/<int:pk>/', RecipeApiDetail, name='recipe_detail'),
 ]
